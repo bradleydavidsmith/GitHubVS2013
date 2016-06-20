@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function substitute() {
+            var value = document.getElementById('myTextBox').value;
+
+            if (value.length == 0) {
+                alert("Please enter a real value in the text box!");
+                return;
+            }
+            var title = document.getElementById('title');
+            title.innerHTML = value;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="title">JavaScript Example</h1>
+    <p>
+        <input type="text" id="myTextBox" />
+        <input type="submit" value="Click me" onclick="substitute();" />
+    </p>
+</body>
+</html>
